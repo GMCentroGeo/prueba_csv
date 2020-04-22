@@ -54,7 +54,7 @@
       }
   });
 
-  var runLayer = omnivore.csv('http://localhost/data.csv', null, customLayer)
+  var runLayer = omnivore.csv('data.csv', null, customLayer)
       .on('ready', function() {
           // http://leafletjs.com/reference.html#map-fitbounds
           map.fitBounds(runLayer.getBounds());
